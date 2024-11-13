@@ -1,0 +1,148 @@
+/* ===================== General Body Styles ===================== */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #292a30;
+  min-height: 95vh;
+  color: white;
+}
+
+/* ===================== Logo and Title (h3) ===================== */
+#logo-title{
+  height: 30px;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+/* Logo Image */
+.logo{
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+}
+
+/* Logo Title Text (h3) */
+h3{
+  margin-left: 10px;
+  font-weight: 1;
+  position: relative;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0);
+  bottom: 25px;
+}
+
+/* ===================== Main Header (h1) ===================== */
+h1 {
+  top: 20px;
+  font-size: 5rem;
+}
+
+/* ===================== Gradient Texts ===================== */
+#first-gradient{
+  background: linear-gradient(90deg, white, #b2fefa, rgba(105, 92, 221, 0.622));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+#second-gradient{
+  background: linear-gradient(90deg, rgba(105, 92, 221, 0.622), #b2fefa, #d3d3d3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ===================== Card Container ===================== */
+.div-box {
+  height: 300px;
+  width: 100%;
+}
+
+/* ===================== Individual Card Styles ===================== */
+.card {
+  display: inline-block;
+  float: right;
+  width: 45%;
+}
+
+/* Right-Aligned Card */
+.right {
+  float: right;
+}
+
+/* Left-Aligned Card */
+.left {
+  float: left;
+}
+
+/* ===================== Tile Image Styling ===================== */
+.tile-image{
+  display: inline-block;
+  height: 200px;
+  width: auto;
+  float: left;
+  margin-right: 30px;
+}
+
+.tile-image{
+  border-radius: 10px;
+}
+
+/* ===================== Card Text Styles (Title and Text) ===================== */
+.card-title, .card-text{
+  color: white;
+}
+
+/* ===================== Footer Styles ===================== */
+footer {
+  display: block;
+  text-align: right;
+  color: rgb(79, 79, 79);
+}
+
+#angelito{
+  color: rgb(27, 27, 120);
+}
+
+footer{
+  clear: both;
+
+}
+
+/* ===================== Mobile-Specific Adjustments (Media Queries) ===================== */
+@media (max-width: 680px) {
+  /* Logo on Mobile */
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* Logo Title Font Size on Mobile */
+  #logo-title{
+    font-size: x-small;
+  }
+
+  /* Main Header on Mobile */
+  h1 {
+    font-size: 3rem;
+    text-align: left ;
+  }
+
+  /* Card Layout on Mobile */
+  .card {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+
+  /* Card Image on Mobile */
+  .card img{
+    margin-bottom: 10px;
+    width: 100%;
+    display: inline;
+    object-fit: cover;
+  }
+}
